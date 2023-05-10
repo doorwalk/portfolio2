@@ -1,0 +1,284 @@
+﻿@charset "UTF-8";
+
+body { background : #000 url("../images/bg_line.png") repeat-x left 1546px; }
+
+#wrapper { width : 1450px; margin : 0 auto;
+         background : #fff; }
+		 
+/* header */
+header { width : 100%; height : 80px; background : #000; color : #fff;
+        position : relative; }
+#logo { position : absolute; left : 20px; top : 15px; }
+#logo img { width : 90.8px; height : 38px; }
+/* gnb menu */
+#gnb_box { position : absolute; left : 200px; top : 30px; z-index : 200;}
+#gnb > li { display : inline-block; margin-right : 50px; }
+#gnb > li > a { font-weight : bold; color : #fff; padding : 30px 10px;
+            transition : all 0.4s; }
+#gnb li a:hover { background : rgba(255,255,255,0.8); color : #000; }
+#gnb li a span { display : inline-block; transform : rotate(90deg);
+                padding-bottom : 5px; transition : all 0.3s; }
+.gnb_li > ul { position : absolute; left : -300px; top : 50px; display : none; }
+.gnb_sub li { display : inline-block; }
+/* 모델소개 메뉴 */
+.model_info { width : 1600px; height : 800px; background : #fff;
+			padding : 30px 90px 30px 90px; box-sizing : border-box; }
+.model_hr { width : 1400px; margin-bottom : 20px; }
+.carModel { border-bottom : 1px solid #aaa; padding-bottom : 15px; 
+				margin-right : 50px; }
+.carModelTop { margin-top : 50px; }
+.carModel a { display : inline-block; }
+.model_info p { color : #000; text-align : center; }
+.moP1 { font-weight : bold; }
+.moP2 { font-size : 12px; padding : 10px 0; }
+.moP3 { font-size : 12px; padding : 15px 0;}
+.moP4 { font-weight : bold; }
+/* 구입문의 메뉴 */
+.purchase { width : 1600px; height : 150px; background : #fff; 
+				padding : 30px 0px 30px 300px; box-sizing : border-box; }
+.purchase li { text-align : center; margin-right : 70px; 
+					 }
+.purchase li a p { padding-bottom : 3px; }
+.pur_img { padding-bottom : 10px;  }
+.pur_p { color : #333; font-weight : bold;  }
+
+/* 주행성능 메뉴 */
+.performance { width : 1600px; height : 330px; background : #fff; 
+				padding : 30px 0px 30px 300px; box-sizing : border-box; }
+.performance li { width : 300px; margin-right : 50px; }
+.performance p { color : #000; text-align : center; }
+.performance li:hover img { box-shadow : 2px 2px 5px #333;}
+.perf_p1 { font-family : arial; padding : 10px 0;}
+p.perf_p2 { font-size : 12px; text-align : justify; }
+
+/* JEEP® LIFE 메뉴 */
+.jeepLife { width : 1600px; height : 330px; background : #fff; 
+				padding : 30px 0px 30px 400px; box-sizing : border-box; }
+.jeepLife img { margin-bottom : 20px; }
+.jeepLife p { color : #000; font-family : arial; font-weight : bold; 
+				text-align : center; }
+.jeepLife li:nth-of-type(1) a:hover img{ box-shadow : 2px 2px 10px #333; }
+.brandStory { height : 234px; margin-left : 150px; 
+					padding : 10px 0 0 150px;
+					border-left : 2px solid #ccc; float : left; }
+.brandStory li { display : block; margin : 20px 0; }
+.brandStory li a { color : #888; }
+.brandStory li a:hover { border-bottom : 2px solid #fc0; }
+
+/* 서비스 메뉴 */
+.service { width : 1600px; height : 450px; background : #fff; 
+				padding : 30px 0px 30px 400px; box-sizing : border-box; }
+.service p { color : #000; padding-bottom : 10px; }
+.service_sub li { display : block; margin : 8px 0; }
+.service_sub li a { color : #888; font-size : 14px;  }
+.service_sub li a:hover { border-bottom : 2px solid #fc0;  }
+.service_sub2 { height : 319px; float : left; margin-left : 150px; 
+						padding-left : 150px; border-left : 2px solid #ccc; }
+.service_sub2 p { padding-top : 10px; }
+
+/* hover시 밑줄 긋는 애니메이션 */
+.underline::after { 
+	display:block;
+	content: '';
+	border-bottom: solid 3px #fc0;  
+	transform: scaleX(0);  
+	transition: transform 0.3s ease-in-out;
+}
+.carModel a:hover .underline::after { transform: scaleX(1); transform-origin:  0% 0%; }
+.purchase a:hover .underline::after { transform: scaleX(1); transform-origin:  0% 0%; }
+
+/* lnb menu */
+#lnb1_box { position : absolute; right : 0px; top : 30px; }
+#lnb1 li { display : inline-block; position : relative;   }
+#lnb1 li:nth-of-type(1) a::before {width : 15px; height : 15px; content : ""; display : block; 
+background : url("../images/handle.png") no-repeat center/15px 15px; position : absolute;
+left : 10px; top : 3px; transition : all 0.4s; }
+#lnb1 li:nth-of-type(2) a::before {width : 12px; height : 16px; content : ""; display : block; 
+background : url("../images/position.png") no-repeat center/12px 16px; position : absolute;
+left : 12px; top : 3px; transition : all 0.4s; }
+#lnb1 li a { color : #fff; font-weight : bold; padding : 30px 10px 30px 30px;
+            transition : all 0.4s; }
+#lnb1 li a:hover { background : rgba(255,255,255,0.8); color : #000; }
+#lnb1 li:nth-of-type(1) a:hover::before { width : 15px; height : 15px; 
+    background : url("../images/handle_o.png") no-repeat center/15px 15px; }
+#lnb1 li:nth-of-type(2) a:hover::before { width : 12px; height : 16px; 
+    background : url("../images/position_o.png") no-repeat center/12px 16px; }
+
+/* main */
+main { width : 100%;  }
+#video_box { width : 100%; height : 500px; }
+video { display : block; margin : 0 auto; width : 100%; height : 100%; }
+
+#container { width : 100%; height : 706px; background : lightgray; }
+#container:after { content : ""; display : block; clear : both; }
+.ct { width : 456.6px; height : 279px; }
+.cb { width : 456.6px; height : 367px; }
+#container article { float : left; margin : 20px 0 0 20px; overflow : hidden; }
+.ct img { width : 100%; height : 213px; transition : all 0.3s; }
+.ct a { color : #000; font-weight : bold; }
+.ct a:hover .shortcut { color : orange; }
+.ct a:hover img { transform : scale(1.05);}
+.white { background : #fff; height : 30px; font-size : 14px; 
+			padding : 10px 0 0 25px; }
+.ct .shortcut { background : #eee; text-align : right; font-size : 13px; 
+				padding : 5px 10px 0 0; height : 21px; }
+.cb img { width : 100%; height : 330px; transition : all 0.3s; }
+.cb a { color : #fff; font-weight : bold; }
+.cb a:hover .shortcut { text-decoration : underline; }
+.cb a:hover img { transform : scale(1.05);}
+.cb .shortcut { background : #333; text-align : right; font-size : 13px; 
+				padding : 10px 10px 0 0; height : 27px; }
+.cb .shortcut span { color : orange; }
+
+
+#vehicles_box { width : 100%; height : 230px; background : #fff; }
+#vehicles_box h2 { font-size : 36px; text-align : center; margin : 30px 0; }
+#vehicles_box h2 span { font-size : 12px; }
+#vehicles li { float : left; }
+#vehicles li a { text-align : center; margin-left : 30px;
+					display : inline-block;  width : 165px; height : 100px;
+					transition : all 0.5s; }
+#vehicles li a:hover { transform : translateY(-10px); }
+#vehicles .vehicle1 a { padding-left : 30px; }
+#vehicles li p { color : #000; font-weight : bold; letter-spacing : -0.5px;  }
+.vehicle1 p { line-height : 1em; }
+#vehicles li a img { width : 172px; height : 93px; }
+
+#side_menuBox { position : fixed; right : 0px; bottom : 150px; z-index : 100; }
+#side_menu li a { display : block; width : 50px; height : 40px; background : orange;
+                position : relative; margin-bottom : 5px; }   
+#side_menu li a p { color : #fff; font-weight : bold; font-size : 12px;
+                width : 130px; height : 18px; border : 1px solid #aaa; 
+                border-right : 0; transition : all 0.5s;
+                position : absolute; top : 0px; left : 50px;
+                padding : 10px 0 10px 20px; z-index: -1; background : #111; }
+#side_menu li a:hover p { left : -150px; }
+.sm1 img { width : 20px; height : 16px; margin : 12px 14px;}
+.sm2 img { width : 22px; height : 22px; margin : 9px 14px; }
+.sm3 img { width : 20px; height : 22px; margin : 9px 14px; }
+.sm4 img { width : 22px; height : 22px; margin : 9px 14px; }
+.sm5 img { width : 18px; height : 22px; margin : 9px 16px; }
+.sm6 img { width : 16px; height : 20px; margin : 9px 16px; }
+.top_move span{ color : #000; font-weight : bold; display : block; padding : 9px;}
+.top_move:hover span { color : #eee; }
+
+/* aside */
+aside {  }
+.left_side_contents { position : fixed; left : -1000px; top : 0px; 
+								width : 1000px; height : 100vh; 
+								background : rgba(255,255,255,0.7); 
+								z-index : 300; }
+.left_side_btn { width : 50px; height : 100px; 
+						position : absolute; right : -50px; top : 100px; 
+						background : rgba(0,0,0,0.7); color : #eee; 
+						font-weight : bold; cursor : pointer; 
+						border : 2px solid #666; border-left : 0; }
+.left_side_btn:hover { background : rgba(255,255,255,0.3); 
+								color : #fc0; border : 2px solid #666; 
+								border-left : 0; }
+.carRacing { width : 100%; height : 650px; padding-top : 50px; }
+.carR { margin-bottom : 60px;  }
+.carR img { width : 150px; height : 55px; position : relative; left : -130px; 
+				 cursor : pointer; }
+.carR2 img { width : 130px; padding-left : 20px; }
+.carR5 img { width : 140px; padding-left : 10px; }
+.carR6 img { width : 140px; padding-left : 10px; }
+.carLine { width : 10px; height : 1px; border : 1px solid #fc0; }
+.carR_name { font : bold 20px arial; position : absolute; 
+			right : 10px; top : 20px; display : none; }
+.carR2 .carR_name { top : 140px; }
+.carR3 .carR_name { top : 255px; }
+.carR4 .carR_name { top : 375px; }
+.carR5 .carR_name { top : 492px; }
+.carR6 .carR_name { top : 610px; }
+
+.carModelName { position : absolute; top : 160px; left : 170px;
+			font-weight : bold; font-size : 23px; 
+			width : 600px; text-align: center;
+			text-shadow : 0 3px 3px #fc0; }
+
+/* img_slide */
+.img_slide {  }
+.img_box { width : 600px; height : 350px; position : relative; 
+				left : 170px; top : -500px; box-shadow : 0 0 10px #000; 
+				display : none; }
+.img_box li { display : none; position : absolute; left : 0; top : 0; }
+.img_box li img { width : 600px; height : 350px; }
+/* Next & previous buttons */
+.slideBtn { cursor: pointer; position: absolute;
+				top: 350px; left : 170px; width: auto;
+				padding: 16px; color: white; font-weight: bold;
+				font-size: 18px; transition: 0.6s ease;
+				border-radius: 20px; user-select: none;
+				background : rgba(0,0,0,0.3); opacity : 0.3; 
+				display : none; }
+.next { left: 725px; }
+
+.slideBtn:hover {
+  background-color: rgba(0,0,0,0.8);
+  opacity : 1;
+}
+
+
+/* footer */
+footer { background : #000; padding : 0 0px; }
+footer h5 { color : #fff; font-weight : bold; }
+footer a, address { color : #aaa; }
+footer a { font-size : 14px; }
+footer a:hover { color : #fff; }
+footer address { font-size : 10px; font-style : normal; }
+#f_topBox { width : 100%; height : 100px;
+            background : #333; position : relative; }
+#f_lnb1Box { float : left; margin : 40px 50px;}
+#f_lnb1 li { display : inline;  }
+#f_lnb1 li a { float : left; font-size : 15px; display : block; margin-right : 40px;  }
+
+#s_box { float : right; margin : 35px 50px; }
+#terms { width : 220px; height : 30px;  border-radius : 5px 0 0 5px; 
+				border : 1px solid #888; border-right : 0; padding-left : 30px;  }
+#s_box:after { content : ""; display : block; width : 16px; height : 16px; 
+						background : url("../images/glass.png") no-repeat center/16px 16px;
+						position : absolute; right : 348px; top : 43px;  }
+#s_btn { width : 100px; height : 30px; background : orange; 
+				border-radius : 0 5px 5px 0; margin-left : -6px; 
+				outline : 0; border : 1px solid #888; border-left : 0; 
+				cursor : pointer; transition : all 0.3s;  }
+#s_btn:hover { opacity : 0.7; }
+
+
+#f_mainBox { margin : 30px 0 50px 0;  padding : 0 50px; }
+#f_mainBox:after { content : ""; display : block; clear : both;  }
+#f_mainBox h5 {  font-size : 15px; }
+#f_lnb2 { float : left ; width : 900px;  }
+#f_lnb2 ul { float : left; margin : 0 70px 20px 0; 
+					height : 220px;  }
+#f_lnb2 ul:first-child { margin-bottom : 0px; }
+#f_lnb2 ul:nth-of-type(5) { margin-right : 120px;  }
+#f_lnb2 ul:nth-of-type(6) { margin-right : 80px;  }
+#f_lnb2 ul:nth-of-type(7) { margin-right : 45px;  }
+#f_lnb2 ul h5 { margin-bottom : 10px; }
+
+
+#followBox { float : left; width : 300px; margin-left : 150px;  }
+#follow li a { float : left; display : block; width : 35px; height : 35px;
+					margin : 15px 10px 0 0; }
+.facebook { background : url("../images/facebook.png") no-repeat 
+				center/35px 35px; }
+.facebook:hover { background : url("../images/facebook_o.png") no-repeat 
+							center/35px 35px; }
+.instargram { background : url("../images/instargram.png") no-repeat 
+					center/35px 35px; }
+.instargram:hover { background : url("../images/instargram_o.png") no-repeat 
+							center/35px 35px; }
+.kakao { background : url("../images/kakao.png") no-repeat 
+					center/35px 35px; }
+.kakao:hover { background : url("../images/kakao_o.png") no-repeat 
+							center/35px 35px;}
+.twitter { background : url("../images/twitter.png") no-repeat 
+					center/35px 35px; }
+.twitter:hover { background : url("../images/twitter_o.png") no-repeat 
+							center/35px 35px;}
+
+#f_foot { padding : 30px 0 50px 50px; border-top : 1px solid #ccc; }
+#f_logo { margin-bottom : 20px; }
+#f_logo img { width : 90.8px; height : 38px; }

@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <title>Jeep</title>
+        <link rel="shortcut icon" href="images/jeep.ico">
+        <link rel="stylesheet" type="text/css" href="css/reset.css">
+        <link rel="stylesheet" type="text/css" href="css/car.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="js/jquery-1.12.4.min.js"></script>
+        <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js" integrity="sha256-lSjKY0/srUM9BE3dPm+c4fBo1dky2v27Gdjm2uoZaL0=" crossorigin="anonymous"></script>
+        <style type="text/css">
+
+        </style>
+    </head>
+    <body>
+        <div id="wrapper"> <!-- wrapper 시작 -->
+            <header> <!-- header 시작 -->
+                <h1 id="logo"><a href="index.html"><img src="images/logo.png" alt="logo"/></a></h1>
+                <nav id="gnb_box">
+                    <ul id="gnb">
+                        <li class="gnb_li"><a href="#">모델소개&nbsp;&nbsp;<span>&#10095;</span></a>
+                            <ul class="gnb_sub model_info">
+                                <hr class="model_hr"/>
+                                <li class="carModel">
+                                    <a href="#">
+                                        <img src="images/model1.png" alt="model1" />
+                                        <p class="moP1 underline">GRAND CHEROKEE L</p>
+                                        <p class="moP2">A LEGACY EXTENDED</p>
+                                        <p class="moP3">시작가</p>
+                                        <p class="moP4">￦98,200,000</p>
+                                    </a>
+                                </li>
+                                <li class="carModel">
+                                    <a href="#">
+                                        <img src="images/model2.png" alt="model2" />
+                                        <p class="moP1 underline">GRAND CHEROKEE</p>
+                                        <p class="moP2">LEGACY EVOLVED</p>
+                                        <p class="moP3">시작가</p>
+                                        <p class="moP4">￦85,500,000</p>
+                                    </a>
+                                </li>
+                                <li class="carModel">
+                                    <a href="#">
+                                        <img src="images/model3.png" alt="model3" />
+                                        <p class="moP1 underline">GRAND CHEROKEE 4XE</p>
+                                        <p class="moP2">FREEDOM IS ELECTRIC</p>
+                                        <p class="moP3">시작가</p>
+                                        <p class="moP4">￦103,200,000</p>
+                                    </a>
+                                </li>
+                                <li class="carModel">
+                                    <a href="#">
+                                        <img src="images/model4.png" alt="model4" />
+                                        <p class="moP1 underline">RENEGADE</p>
+                                        <p class="moP2">BORN TO BE WILD</p>
+                                        <p class="moP3">시작가</p>
+                                        <p class="moP4">￦41,900,000</p>
+                                    </a>
+                                </li>
+                                <li class="carModel carModelTop">
+                                    <a href="#">
+                                        <img src="images/model5.png" alt="model5" />
+                                        <p class="moP1 underline">WRANGLER</p>
+                                        <p class="moP2">RESET THE LIMITS</p>
+                                        <p class="moP3">시작가</p>
+                                        <p class="moP4">￦77,100,000</p>
+                                    </a>
+                                </li>
+                                <li class="carModel carModelTop">
+                                    <a href="#">
+                                        <img src="images/model6.png" alt="model6" />
+                                        <p class="moP1 underline">WRANGLERT 4XE</p>
+                                        <p class="moP2">RESET THE LIMITS</p>
+                                        <p class="moP3">시작가</p>
+                                        <p class="moP4">￦97,800,000</p>
+                                    </a>
+                                </li>
+                                <li class="carModel carModelTop">
+                                    <a href="#">
+                                        <img src="images/model7.png" alt="model7" />
+                                        <p class="moP1 underline">GLADIATOR</p>
+                                        <p class="moP2">FOR THE THRILL SEEKERS ONLY</p>
+                                        <p class="moP3">시작가</p>
+                                        <p class="moP4">￦85,100,000</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="gnb_li"><a href="#">구입문의&nbsp;&nbsp;<span>&#10095;</span></a>
+							<ul class="gnb_sub purchase">
+								<li>
+									<a href="#">
+										<img class="pur_img" src="images/promotion.png" alt="프로모션" />
+										<p class="pur_p underline">프로모션</p>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<img class="pur_img" src="images/testdrive.png" alt="시승신청" />
+										<p class="pur_p underline">시승신청</p>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<img class="pur_img" src="images/estimate.png" alt="견적요청" />
+										<p class="pur_p underline">견적요청</p>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<img class="pur_img" src="images/location.png" alt="전시장/서비스센터 검색" />
+										<p class="pur_p underline">전시장/서비스센터 검색</p>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<img class="pur_img" src="images/catalogue2.png" alt="카탈로그 다운로드" />
+										<p class="pur_p underline">카탈로그 다운로드</p>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<img class="pur_img" src="images/accessory2.png" alt="악세서리 카탈로그" />
+										<p class="pur_p underline">악세서리 카탈로그</p>
+									</a>
+								</li>
+							</ul>
+						</li>
+                        <li class="gnb_li"><a href="#">주행성능&nbsp;&nbsp;<span>&#10095;</span></a>
+							<ul class="gnb_sub performance">
+								<li>
+									<a href="#">
+										<img class="perf_img" src="images/performance1.jpg" alt="퍼포먼스 사진1" />
+										<p class="perf_p1">TRAIL RATED®</p>
+										<p class="perf_p2">
+											모든 Trail Rated® 4x4 Jeep® 차량은 5가지 범주인 트랙션, 도하능력,
+											기동성, 아티큘레이션, 최저지상고에서 엄격한 테스트를 통과했습니다.
+										</p>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<img class="perf_img" src="images/performance2.jpg" alt="퍼포먼스 사진2" />
+										<p class="perf_p1">4X4 SYSTEMS</p>
+										<p class="perf_p2">
+											어떤 지형도 마스터할 전천후 Jeep 브랜드 4x4 시스템을 선택한다면 모험에 대한 열정을 만족시켜 줄 것입니다.
+										</p>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<img class="perf_img" src="images/performance3.jpg" alt="퍼포먼스 사진3" />
+										<p class="perf_p1">FAQ & GLOSSARY</p>
+										<p class="perf_p2">
+											Jeep 브랜드의 차량은 오프로드용으로 설계되고 제작됩니다. 거친 오프로드의 삶에 친숙해지도록FAQ와 함께 용어를 설명해드립니다.
+										</p>
+									</a>
+								</li>
+							</ul>
+						</li>
+                        <li class="gnb_li"><a href="#">JEEP&reg; LIFE&nbsp;&nbsp;<span>&#10095;</span></a>
+							<ul class="gnb_sub jeepLife">
+								<li>
+									<a href="#">
+										<img src="images/jeepLIFE.jpg" alt="지프 오너를 위한 멤버십" />
+										<p>JEEP WAVE®<br />OWNER들을 위한 프리미엄 멤버십</p>
+									</a>
+								</li>
+								<li>
+									<ul class="brandStory">
+										<p>BRAND STORY</p>
+										<li><a href="#">BRAND HISTORY</a></li>
+										<li><a href="#">PRESS ROOM</a></li>
+										<li><a href="#">PARTNERSHIPS</a></li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+                        <li class="gnb_li"><a href="#">서비스&nbsp;&nbsp;<span>&#10095;</span></a>
+							<ul class="gnb_sub service">
+								<li>
+									<ul class="service_sub1 service_sub">
+										<p>서비스</p>
+										<li><a href="#">Jeep Service Campaign</a></li>
+										<li><a href="#">전시장/서비스 센터 검색</a></li>
+										<li><a href="#">서비스 예약</a></li>
+										<li><a href="#">JEEP CARE</a></li>
+										<li><a href="#">연장 보증</a></li>
+										<li><a href="#">MVP</a></li>
+										<li><a href="#">문의하기</a></li>
+										<li><a href="#">자동차 교환환불제도 안내</a></li>
+										<li><a href="#">정비 정보</a></li>
+										<li><a href="#">자동차 전자제어장치 무선 업데이트(OTA)</a></li>
+									</ul>
+								</li>
+								<li>
+									<ul class="service_sub2 service_sub">
+										<p>악세서리 카탈로그</p>
+										<li><a href="#">Grand Cherokee L</a></li>
+										<li><a href="#">Gladiator</a></li>
+										<li><a href="#">Wrangler 4xe</a></li>
+										<li><a href="#">Wrangler</a></li>
+										<li><a href="#">Renegade</a></li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+                    </ul>
+                </nav>
+                <nav id="lnb1_box">
+                    <ul id="lnb1">
+                        <li><a href="#">시승신청</a></li>
+                        <li><a href="#">전시장/서비스 센터 검색</a></li>
+                    </ul>
+                </nav>
+            </header>  <!-- header 끝 -->
+			
+            <main> <!-- main시작 -->
+				<figure id="video_box">
+					<video controls autoplay muted loop >
+						<source src="video/jeep.mp4">
+					</video>
+				</figure>
+				<section id="container">
+					<article id="content1" class="ct">
+						<a href="#">
+							<img src="images/content1.jpg" alt="지프 오너를 위한 멤버십" />
+							<div class="white">
+								<p>멤버십 가입하기</p>
+							</div>
+							<div class="shortcut">
+								<p>바로가기 	&#10095; </p>
+							</div>
+						</a>
+					</article>
+					<article id="content2" class="ct">
+						<a href="#">
+							<img src="images/content2.jpg" alt="자동차 사진" />
+							<div class="white">
+								<p>시승신청</p>
+							</div>
+							<div class="shortcut">
+								<p>바로가기 	&#10095; </p>
+							</div>
+						</a>
+					</article>
+					<article id="content3" class="ct">
+						<a href="#">
+							<img src="images/content3.jpg" alt="멤버십 혜택 확인하기" />
+							<div class="white">
+								<p>멤버십 혜택 확인하기</p>
+							</div>
+							<div class="shortcut">
+								<p>바로가기 	&#10095; </p>
+							</div>
+						</a>
+					</article>
+					<article id="content4" class="cb">
+						<a href="#">
+							<img src="images/content4.jpg" alt="시승신청" />
+							<div class="shortcut">
+								<p>바로가기 	<span>&#10095;</span> </p>
+							</div>
+						</a>
+					</article>
+					<article id="content5" class="cb">
+						<a href="#">
+							<img src="images/content5.jpg" alt="이달의 프로모션" />
+							<div class="shortcut">
+								<p>바로가기 	<span>&#10095;</span> </p>
+							</div>
+						</a>
+					</article>
+					<article id="content6" class="cb">
+						<a href="#">
+							<img src="images/content6.jpg" alt="전시장 찾기" />
+							<div class="shortcut">
+								<p>바로가기 	<span>&#10095;</span> </p>
+							</div>
+						</a>
+					</article>
+				</section>
+				<article id="vehicles_box">
+					<h2>JEEP<span>&reg;</span> VEHICLES</h2>
+					<ul id="vehicles">
+						<li class="vehicle1">
+							<a href="#">
+								<img src="images/vehicle1.jpg" alt="ALL-NEW GRAND" />
+								<p>ALL-NEW GRAND<br />CHEROKEE</p>
+							</a>
+						</li>
+						<li class="vehicle2">
+							<a href="#">
+								<img src="images/vehicle2.jpg" alt="COMPASS" />
+								<p>COMPASS</p>
+							</a>
+						</li>
+						<li class="vehicle3">
+							<a href="#">
+								<img src="images/vehicle3.jpg" alt="RENEGADE" />
+								<p>RENEGADE</p>
+							</a>
+						</li>
+						<li class="vehicle4">
+							<a href="#">
+								<img src="images/vehicle4.jpg" alt="GRAND CHEROKEE L" />
+								<p>GRAND CHEROKEE L</p>
+							</a>
+						</li>
+						<li class="vehicle5">
+							<a href="#">
+								<img src="images/vehicle5.jpg" alt="GLADIATOR" />
+								<p>GLADIATOR</p>
+							</a>
+						</li>
+						<li class="vehicle6">
+							<a href="#">
+								<img src="images/vehicle6.jpg" alt="WRANGLER" />
+								<p>WRANGLER</p>
+							</a>
+						</li>
+						<li class="vehicle7">
+							<a href="#">
+								<img src="images/vehicle7.jpg" alt="CHEROKEE" />
+								<p>CHEROKEE</p>
+							</a>
+						</li>
+					</ul>
+				</article>
+                <nav id="side_menuBox">
+                    <ul id="side_menu">
+                        <li>
+                            <a href="#" class="sm1">
+                                <img src="images/car1.png" alt="" />
+                                <p>시승신청</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="sm2">
+                                <img src="images/spanner1.png"  alt="" />
+                                <p>서비스 예약</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="sm3">
+                                <img src="images/catalogue.png"  alt="" />
+                                <p>자동차 카탈로그</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="sm4">
+                                <img src="images/accessory.png"  alt="" />
+                                <p>악세서리 카탈로그</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="sm5">
+                                <img src="images/calc.png"  alt="" />
+                                <p>프로모션</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="sm6">
+                                <img src="images/position_o.png"  alt="" />
+                                <p>전시장/서비스센터검색</p>
+                            </a>
+                        </li>
+						<li>
+							<a href="#" class="top_move"><span>TOP</span></a>
+						</li>
+                    </ul>
+                </nav>
+            </main> <!-- main 끝 -->
+			
+			<aside> <!-- aside 시작 -->
+				<div class="left_side_contents">
+					<button type="button" class="left_side_btn">사<br>이<br>드<br>메<br>뉴</button>
+					<ul class="carRacing">
+						<li class="carR1 carR">
+							<img src="images/carR1.png" alt="" />
+							<span class="carR_name">ALL-NEW GRAND CHEROKEE</span>
+							<div class="carLine"></div>
+						</li>
+						<li class="carR2 carR">
+							<img src="images/carR2.png" alt="" />
+							<span class="carR_name">RENEGADE</span>
+							<div class="carLine"></div>
+						</li>
+						<li class="carR3 carR">
+							<img src="images/carR3.png" alt="" />
+							<span class="carR_name">GRAND CHEROKEE L</span>
+							<div class="carLine"></div>
+						</li>
+						<li class="carR4 carR">
+							<img src="images/carR4.png" alt="" />
+							<span class="carR_name">GLADIATOR</span>
+							<div class="carLine"></div>
+						</li>
+						<li class="carR5 carR">
+							<img src="images/carR5.png" alt="" />
+							<span class="carR_name">WRANGLER</span>
+							<div class="carLine"></div>
+						</li>
+						<li class="carR6 carR">
+							<img src="images/carR6.png" alt="" />
+							<span class="carR_name">CHEROKEE</span>
+							<div class="carLine"></div>
+						</li>
+					</ul>
+					
+					<div id="img_slide">
+						<p class="carModelName"></p>
+						<ul class="img_box allnew_cherokee">
+							<li class="mySlides"><img src="images/allnew_cherokee1.jpg" alt="" /></li>
+							<li class="mySlides"><img src="images/allnew_cherokee2.jpg" alt="" /></li>
+							<li class="mySlides"><img src="images/allnew_cherokee3.jpg" alt="" /></li>
+							<li class="mySlides"><img src="images/allnew_cherokee4.jpg" alt="" /></li>
+							<li class="mySlides"><img src="images/allnew_cherokee5.jpg" alt="" /></li>
+						</ul>
+						<ul class="img_box Renegade">
+							<li class="mySlides"><img src="images/renegade1.jpg" alt="" /></li>
+							<li class="mySlides"><img src="images/renegade2.jpg" alt="" /></li>
+							<li class="mySlides"><img src="images/renegade3.jpg" alt="" /></li>
+							<li class="mySlides"><img src="images/renegade4.jpg" alt="" /></li>
+							<li class="mySlides"><img src="images/renegade5.jpg" alt="" /></li>
+						</ul>
+						<ul class="img_box grand_cherokeeL">
+							<li class="mySlides"><img src="images/grand_cherokeeL1.jpg" alt="" /></li>
+							<li class="mySlides"><img src="images/grand_cherokeeL2.jpg" alt="" /></li>
+							<li class="mySlides"><img src="images/grand_cherokeeL3.jpg" alt="" /></li>
+							<li class="mySlides"><img src="images/grand_cherokeeL4.jpg" alt="" /></li>
+							<li class="mySlides"><img src="images/grand_cherokeeL5.jpg" alt="" /></li>
+						</ul>
+						<ul class="img_box gladiator">
+							<li class="mySlides"><img src="images/gladiator1.jpg" alt="" /></li>
+							<li class="mySlides"><img src="images/gladiator2.jpg" alt="" /></li>
+							<li class="mySlides"><img src="images/gladiator3.jpg" alt="" /></li>
+							<li class="mySlides"><img src="images/gladiator4.jpg" alt="" /></li>
+							<li class="mySlides"><img src="images/gladiator5.jpg" alt="" /></li>
+						</ul>
+						<ul class="img_box wrangler">
+							<li class="mySlides"><img src="images/wrangler1.jpg" alt="" /></li>
+							<li class="mySlides"><img src="images/wrangler2.jpg" alt="" /></li>
+							<li class="mySlides"><img src="images/wrangler3.jpg" alt="" /></li>
+							<li class="mySlides"><img src="images/wrangler4.jpg" alt="" /></li>
+							<li class="mySlides"><img src="images/wrangler5.jpg" alt="" /></li>
+						</ul>
+						<ul class="img_box cherokee">
+							<li class="mySlides"><img src="images/cherokee1.jpg" alt="" /></li>
+							<li class="mySlides"><img src="images/cherokee2.jpg" alt="" /></li>
+							<li class="mySlides"><img src="images/cherokee3.jpg" alt="" /></li>
+							<li class="mySlides"><img src="images/cherokee4.jpg" alt="" /></li>
+							<li class="mySlides"><img src="images/cherokee5.jpg" alt="" /></li>
+						</ul>
+						
+						<div class="buttons">
+							<button class="prev slideBtn">&#10094;</button>
+							<button class="next slideBtn">&#10095;</button>
+						</div>
+					</div>
+				</div>
+			</aside> <!-- aside 끝 -->
+			
+            <footer> <!-- footer 시작 -->
+                <div id="f_topBox">
+                    <nav id="f_lnb1Box">
+                        <ul id="f_lnb1">
+                            <li><a href="#">Find Your Country</a></li>
+                            <li><a href="#">HOME</a></li>
+                            <li><a href="#">CONTACT US</a></li>
+                            <li><a href="#">SITE MAP</a></li>
+                            <li><a href="#">개인정보 처리방침</a></li>
+                        </ul>
+                    </nav>
+                    <form id="s_box" action="#" method="get">
+                        <input type="search" name="terms" id="terms" placeholder="Enter Search Terms" >
+                        <input type="submit" value="SEARCH" id="s_btn">
+                    </form>
+                </div>
+                <div id="f_mainBox">
+                    <nav id="f_lnb2">
+                        <ul id="model">
+                            <h5>모델</h5>
+                            <li><a href="#">All-New Grand Cherokee</a></li>
+                            <li><a href="#">Grand Cherokee L</a></li>
+                            <li><a href="#">Wrangler 4xe</a></li>
+                            <li><a href="#">Gladiator</a></li>
+                            <li><a href="#">Wrangler</a></li>
+                            <li><a href="#">Renegade</a></li>
+                            <li><a href="#">Compass</a></li>
+                            <li><a href="#">Cherokee</a></li>
+                        </ul>
+                        <ul id="inquiry">
+                            <h5>구입문의</h5>
+                            <li><a href="#">시승신청</a></li>
+                            <li><a href="#">세일즈 프로모션</a></li>
+                            <li><a href="#">전시장 검색</a></li>
+                            <li><a href="#">카탈로그 다운로드</a></li>
+                        </ul>
+                        <ul id="performance">
+                            <h5>주행성능</h5>
+                            <li><a href="#">TRAIL RATED®</a></li>
+                            <li><a href="#">4X4 SYSTEMS</a></li>
+                            <li><a href="#">FAQ AND GLOSSARY</a></li>
+                        </ul>
+                        <ul id="owners">
+                            <h5>JEEP® OWNERS</h5>
+                            <li><a href="#">Jeep® STORY</a></li>
+                            <li><a href="#">Jeep® CAMP</a></li>
+                            <li><a href="#">Jeep® CARE</a></li>
+                        </ul>
+                        <ul id="brand">
+                            <h5>BRAND STORY</h5>
+                            <li><a href="#">BRAND HISTORY</a></li>
+                            <li><a href="#">PRESSROOM</a></li>
+                            <li><a href="#">PARTNERSHIPS</a></li>
+                            <li><a href="#">VIDEO</a></li>
+                        </ul>
+                        <ul id="camp">
+                            <h5>JEEP CAMP</h5>
+                            <li><a href="#">Jeep Camp 2022</a></li>
+                            <li><a href="#">Jeep Camp 2021</a></li>
+                            <li><a href="#">Jeep Camp 2020</a></li>
+                            <li><a href="#">Jeep Camp 2019</a></li>
+                            <li><a href="#">Jeep Camp 2018</a></li>
+                            <li><a href="#">Jeep Camp 2017</a></li>
+                            <li><a href="#">Jeep Camp 2016</a></li>
+                            <li><a href="#">Jeep Camp 2015</a></li>
+                            <li><a href="#">Jeep Camp 2014</a></li>
+                        </ul>
+                        <ul id="services">
+                            <h5>서비스</h5>
+                            <li><a href="#">전시장/서비스센터 검색</a></li>
+                            <li><a href="#">서비스 예약</a></li>
+                            <li><a href="#">JEEP CARE</a></li>
+                            <li><a href="#">문의하기</a></li>
+                            <li><a href="#">Jeep 부품 가격정보</a></li>
+                            <li><a href="#">Chrysler 부품 가격정보</a></li>
+                            <li><a href="#">Fiat 부품 가격정보</a></li>
+                            <li><a href="#">부품취급설명서 다운로드</a></li>
+                            <li><a href="#">자동차결함 신고센터</a></li>
+                            <li><a href="#">정비정보</a></li>
+                        </ul>
+                        <ul id="legal">
+                            <h5>LEGAL</h5>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Legal, safety, and<br />trademark information</a></li>
+                        </ul>
+                    </nav>
+                    <div id="followBox">
+						<h5>FOLLOW US</h5>
+                        <ul id="follow">
+                            <li><a href="#" class="facebook"></a></li>
+                            <li><a href="#" class="instargram"></a></li>
+                            <li><a href="#" class="kakao"></a></li>
+                            <li><a href="#" class="twitter"></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="f_foot">
+                    <h2 id="f_logo"><a href="#"><img src="images/logo.png"   alt="logo" /></a></h2>
+                    <address>
+                        ©2022 Stellantis. All Rights Reserved.<br />
+                        Chrysler, Jeep 및 FIAT 로고는 Stellantis의 등록 상표입니다. 
+                    </address>
+                </div>
+            </footer> <!-- footer 끝 -->
+        </div> <!-- wrapper 끝 -->
+        <script src="js/car.js"></script>
+    </body>
+</html>
